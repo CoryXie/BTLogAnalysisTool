@@ -1,0 +1,134 @@
+
+
+
+		BTSNOOP LOG HANDSFREE LAYER ANALYSIS
+
+ATT Commands by Slave
+AT+BRSF=26.
+ATT Commands by Master
+AT+CHLD=2.
+* AT+CIND=?.
+AT+BRSF=26.
+AT+VGM=1.
+AT+VGM=3.
+AT+VGM=7.
+AT+VGM=4.
+AT+VGS=11.
+AT+VGS=15.
+AT+VGS=13.
+AT+VGM=8.
+AT+CCWA=1.
+* AT+CMER=3 0 0 1.
+AT+CHLD=3.
+AT+CIND=?.
+AT+VGM=10.
+AT+VGS=09.
+AT+VGM=2.
+AT+CHLD=?.
+AT+CIND?.
+AT+VGM=6.
+AT+CHUP.
+AT+VGM=0.
+AT+BTRH?.
+AT+VGM=5.
+AT+VGM=9.
+AT+VGM=15.
+AT+VGM=11.
+Frame#	By	Command		Response		AT Info
+
+--------------------------------------------------------------------------------
+176	Slave	AT+BRSF=26		+BRSF:615..		Retrieve AG Supported Features..
+177	Slave	AT+BRSF=26		OK..		Retrieve AG Supported Features..
+184	Master	AT+CIND=?				Get supported indicators
+185	Master	AT+CIND=?		+CIND:call01..		Get supported indicators..
+186	Master	AT+CIND=?		OK		Get supported indicators
+191	Master	AT+CIND?		+CIND:000004..		Get indicators' status..
+192	Master	AT+CIND?		OK		Get indicators' status
+197	Master	AT+CMER=3001		OK..		* Enable "indicators' status r..
+200	Master	AT+CHLD=?		+CHLD:0123..		Retrieve "Three way calling" I..
+201	Master	AT+CHLD=?		OK..		Retrieve "Three way calling" I..
+202	Master	AT+CHLD=?		+CIEV:31..		Retrieve "Three way calling" I..
+209	Master	AT+CCWA=1		OK..		Enable call waiting notificati..
+212	Master	AT+BTRH?		ERROR		Query the current "response an..
+215	Master	AT+VGS=15		OK		Current speaker gain: 15
+218	Master	AT+VGM=15		OK		Current microphone gain: 15
+424	Master	AT+BRSF=26		+BRSF:615..		Retrieve AG Supported Features..
+425	Master	AT+BRSF=26		OK..		Retrieve AG Supported Features..
+544	M (HF)	AT+BRSF=26		+BRSF:615..		Retrieve AG Supported Features..
+545	M (HF)	AT+BRSF=26		OK..		Retrieve AG Supported Features..
+549	M (HF)	AT+CIND=?				Get supported indicators
+550	M (HF)	AT+CIND=?		+CIND:call01..		Get supported indicators..
+551	M (HF)	AT+CIND=?		OK		Get supported indicators
+556	M (HF)	AT+CIND?		+CIND:101503..		Get indicators' status..
+557	M (HF)	AT+CIND?		OK		Get indicators' status
+562	M (HF)	AT+CMER=3001		OK..		* Enable "indicators' status r..
+565	M (HF)	AT+CHLD=?		+CHLD:0123..		Retrieve "Three way calling" I..
+566	M (HF)	AT+CHLD=?		OK..		Retrieve "Three way calling" I..
+574	M (HF)	AT+CCWA=1		OK..		Enable call waiting notificati..
+578	M (HF)	AT+VGS=15		OK		Current speaker gain: 15
+582	M (HF)	AT+VGM=15		OK		Current microphone gain: 15
+585	M (HF)	AT+CHLD=2		OK..		Execute "Call hold and multipa..
+587	M (HF)	AT+CHLD=2		+CIEV:71..		Execute "Call hold and multipa..
+615	M (HF)	AT+VGM=0		OK		Current microphone gain: 0
+618	M (HF)	AT+VGS=13		OK		Current speaker gain: 13
+621	M (HF)	AT+VGM=0		OK		Current microphone gain: 0
+624	M (HF)	AT+VGS=11		OK		Current speaker gain: 11
+627	M (HF)	AT+VGM=11		OK		Current microphone gain: 11
+630	M (HF)	AT+VGM=1		OK		Current microphone gain: 1
+633	M (HF)	AT+VGM=2		OK		Current microphone gain: 2
+636	M (HF)	AT+VGM=3		OK		Current microphone gain: 3
+639	M (HF)	AT+VGM=4		OK		Current microphone gain: 4
+642	M (HF)	AT+VGM=5		OK		Current microphone gain: 5
+645	M (HF)	AT+VGM=6		OK		Current microphone gain: 6
+648	M (HF)	AT+VGM=7		OK		Current microphone gain: 7
+651	M (HF)	AT+VGM=8		OK		Current microphone gain: 8
+654	M (HF)	AT+VGM=9		OK		Current microphone gain: 9
+657	M (HF)	AT+VGM=10		OK		Current microphone gain: 10
+660	M (HF)	AT+VGM=11		OK		Current microphone gain: 11
+663	M (HF)	AT+VGM=0		OK		Current microphone gain: 0
+666	M (HF)	AT+CHLD=3		OK..		Execute "Call hold and multipa..
+668	M (HF)	AT+CHLD=3		+CIEV:70..		Execute "Call hold and multipa..
+686	M (HF)	AT+VGM=0		OK		Current microphone gain: 0
+690	M (HF)	AT+VGS=09		OK		Current speaker gain: 09
+693	M (HF)	AT+VGM=9		OK		Current microphone gain: 9
+696	M (HF)	AT+VGM=1		OK		Current microphone gain: 1
+699	M (HF)	AT+VGM=2		OK		Current microphone gain: 2
+702	M (HF)	AT+VGM=3		OK		Current microphone gain: 3
+705	M (HF)	AT+VGM=4		OK		Current microphone gain: 4
+708	M (HF)	AT+VGM=5		OK		Current microphone gain: 5
+711	M (HF)	AT+VGM=6		OK		Current microphone gain: 6
+714	M (HF)	AT+VGM=7		OK		Current microphone gain: 7
+717	M (HF)	AT+VGM=8		OK		Current microphone gain: 8
+720	M (HF)	AT+VGM=9		OK		Current microphone gain: 9
+723	M (HF)	AT+VGM=0		OK		Current microphone gain: 0
+726	M (HF)	AT+VGM=0		OK		Current microphone gain: 0
+729	M (HF)	AT+VGM=1		OK		Current microphone gain: 1
+732	M (HF)	AT+VGM=2		OK		Current microphone gain: 2
+735	M (HF)	AT+VGM=3		OK		Current microphone gain: 3
+738	M (HF)	AT+VGM=4		OK		Current microphone gain: 4
+741	M (HF)	AT+VGM=5		OK		Current microphone gain: 5
+744	M (HF)	AT+VGM=6		OK		Current microphone gain: 6
+747	M (HF)	AT+VGM=7		OK		Current microphone gain: 7
+750	M (HF)	AT+VGM=8		OK		Current microphone gain: 8
+753	M (HF)	AT+VGM=9		OK		Current microphone gain: 9
+756	M (HF)	AT+VGM=0		OK		Current microphone gain: 0
+763	M (HF)	AT+CHUP		OK		Terminate the call
+769	M (HF)	AT+CHLD=0		OK..		* Execute "Call hold and multi..
+771	M (HF)	AT+CHLD=0		+CIEV:70..		* Execute "Call hold and multi..
+775	M (HF)	AT+VGS=07		OK		* Current speaker gain: 07
+779	M (HF)	AT+VGS=05		OK		* Current speaker gain: 05
+782	M (HF)	AT+VGM=0		OK		Current microphone gain: 0
+785	M (HF)	AT+VGM=1		OK		Current microphone gain: 1
+788	M (HF)	AT+VGM=2		OK		Current microphone gain: 2
+791	M (HF)	AT+VGM=3		OK		Current microphone gain: 3
+794	M (HF)	AT+VGM=4		OK		Current microphone gain: 4
+797	M (HF)	AT+VGM=5		OK		Current microphone gain: 5
+800	M (HF)	AT+VGM=0		OK		Current microphone gain: 0
+808	M (HF)	AT+VGM=0		OK		* Current microphone gain: 0
+814	M (HF)	AT+VGM=1		OK		* Current microphone gain: 1
+818	M (HF)	AT+VGM=2		OK		* Current microphone gain: 2
+822	M (HF)	AT+VGM=3		OK		* Current microphone gain: 3
+825	M (HF)	AT+VGM=4		OK		Current microphone gain: 4
+828	M (HF)	AT+VGM=5		OK		Current microphone gain: 5
+836	M (HF)	AT+CHUP		OK		Terminate the call
+845	M (HF)	AT+BTRH?		ERROR		* Query the current "response ..
